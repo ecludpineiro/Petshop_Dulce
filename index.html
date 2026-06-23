@@ -4,54 +4,152 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsividade</title>
-    <!-- Libraria Bootstrap -->'
+    <title>Tudo de Bicho</title>
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Libraria Font Awesome -->
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
-    <!-- Topo-->
-    <header>
-        <div class="contenedor_header ">
-            <figure>
-                    <img src="./img/logo_tudodebicho.svg" alt="Logotipo Bichinhos" class="flex logo_pet">
-            </figure>
-            <div class="menu_utilidades">
-                <ul class="icones_utilidades">
-                    <li class="icone">
-                        <a href="#favoritos" title="Favoritos" src="./img/icon/heart-fill.svg"></a>
-                    </li>
-                </ul>
+    <div class="app-shell">
+        <header class="top-header container-fluid">
+            <div class="row align-items-center g-3">
+                <div class="col-7 col-lg-3">
+                    <a href="#" class="brand-link" aria-label="Tudo de Bicho">
+                        <img src="./img/logo_tudodebicho.svg" alt="Tudo de Bicho" class="logo-pet">
+                    </a>
+                </div>
 
+                <div class="col-lg-5 d-none d-lg-block">
+                    <form class="search-form search-form-desktop" action="#" method="get">
+                        <label for="busca-desktop" class="visually-hidden">Digite sua busca</label>
+                        <input type="search" id="busca-desktop" name="busca" placeholder="Digite sua busca" autocomplete="off">
+                        <button type="submit" aria-label="Pesquisar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <nav class="col-5 col-lg-4" aria-label="Utilidades">
+                    <ul class="utility-menu d-flex justify-content-end align-items-center m-0 p-0">
+                        <li class="d-none d-lg-inline-flex">
+                            <a href="#localizacao" aria-label="Localizacao">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#favoritos" aria-label="Favoritos">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </li>
+                        <li class="d-lg-none">
+                            <a href="#localizacao" aria-label="Localizacao">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#login" aria-label="Login">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="d-none d-lg-inline-flex">
+                            <a href="#carrinho" class="header-cart" aria-label="Carrinho">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                                <span>∞</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+        </header>
 
+        <nav class="category-nav d-none d-lg-block" aria-label="Categorias">
+            <ul class="container-fluid d-flex align-items-center justify-content-center m-0 p-0">
+                <li><a href="#cachorros">Cachorros</a></li>
+                <li><a href="#gatos">Gatos</a></li>
+                <li><a href="#outros-pets">Outros Pets</a></li>
+                <li><a href="#suporte">Suporte ao Cliente</a></li>
+            </ul>
+        </nav>
 
-            </div>
-    </header>
+        <main class="main-content container-fluid">
+            <section class="search-section d-lg-none" aria-label="Busca">
+                <form class="search-form" action="#" method="get">
+                    <label for="busca" class="visually-hidden">Digite sua busca</label>
+                    <input type="search" id="busca" name="busca" placeholder="Digite sua busca" autocomplete="off">
+                    <button type="submit" aria-label="Pesquisar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </section>
 
-    <!-- Conteudo-->
-    <main>
-        <!-- Container pai -->
+            <section class="cep-section" aria-label="Endereco de entrega">
+                <a href="#cep" class="cep-link">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Informe seu CEP</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </section>
 
-    </main>
-    <!-- Rodapé-->
-    <footer>
-        <h6 class="text-center py-4">© 2024 Todos os direitos reservados.</h6>
+            <section class="showcase-space" aria-label="Conteudo principal">
+                <div class="desktop-carousel d-none d-lg-flex" aria-label="Promocoes">
+                    <button type="button" class="carousel-arrow" aria-label="Anterior">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-track">
+                        <article class="promo-card"></article>
+                        <article class="promo-card"></article>
+                        <article class="promo-card"></article>
+                        <article class="promo-card"></article>
+                        <article class="promo-card promo-card-cut"></article>
+                    </div>
+                    <button type="button" class="carousel-arrow" aria-label="Proximo">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <nav class="bottom-nav" aria-label="Menu principal">
+            <a href="#menu" class="bottom-nav-item">
+                <i class="fa-solid fa-bars"></i>
+                <span>Menu</span>
+            </a>
+            <a href="#inicio" class="bottom-nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>In&iacute;cio</span>
+            </a>
+            <a href="#carrinho" class="bottom-nav-item cart-action" aria-label="Carrinho">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="#busca" class="bottom-nav-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Busca</span>
+            </a>
+            <a href="#login" class="bottom-nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Login</span>
+            </a>
+        </nav>
+    </div>
+
+    <footer class="site-footer">
+        <h6 class="text-center py-3 m-0">&copy; 2024 Todos os direitos reservados.</h6>
     </footer>
 
-
-
-
-    <!-- Bootstrap JS Bundle with Popper   -->
+    <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </body>
+
+</html>
