@@ -41,7 +41,7 @@ a {
     display: block;
     /* width: clamp(190px, 33vw, 267px); */
     height: auto;
-    width: 80px;
+    width: 100px;
 }
 
 .utility-menu {
@@ -279,7 +279,7 @@ a {
     }
 
     .logo-pet {
-        width: 80px;
+        width: 150px;
     }
 
     .utility-menu {
