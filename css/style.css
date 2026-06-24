@@ -30,7 +30,7 @@ a {
     width: 100%;
     /* min-height: 100vh; */
     padding-bottom: 50px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .top-header {
@@ -39,8 +39,9 @@ a {
 
 .logo-pet {
     display: block;
-    width: clamp(190px, 33vw, 267px);
+    /* width: clamp(190px, 33vw, 267px); */
     height: auto;
+    width: 80px;
 }
 
 .utility-menu {
@@ -53,7 +54,8 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #8f6bdf;
+    color: var(--brand-lavender);
+    /* color: #8f6bdf; */
     font-size: clamp(2rem, 5vw, 2.7rem);
     line-height: 1;
 }
@@ -185,7 +187,8 @@ a {
 .promo-card {
     height: 102px;
     border-radius: 16px;
-    background: var(--brand-lavender);
+    background: #a8a8a8;
+    /* background: var(--brand-lavender); */
 }
 
 .promo-card-cut {
@@ -200,7 +203,7 @@ a {
     place-items: center;
     border: 0;
     border-radius: 50%;
-    background: var(--brand-pink);
+    background: #442036;
     color: #ffffff;
     font-size: 1.45rem;
 }
@@ -215,7 +218,8 @@ a {
     align-items: end;
     min-height: 146px;
     padding: 2.6rem 1.15rem 1.55rem;
-    background: var(--brand-purple);
+    background: var(--brand-lavender);
+    /* background: var(--brand-purple); */
     border-radius: 14px 14px 0 0;
     z-index: 10;
 }
@@ -244,7 +248,8 @@ a {
     height: clamp(92px, 17vw, 124px);
     margin-top: -76px;
     border-radius: 50%;
-    background: var(--brand-purple-dark);
+    background: var(--brand-purple);
+    /* background: var(--brand-purple-dark); */
 }
 
 .cart-action i {
@@ -274,7 +279,7 @@ a {
     }
 
     .logo-pet {
-        width: 154px;
+        width: 80px;
     }
 
     .utility-menu {
