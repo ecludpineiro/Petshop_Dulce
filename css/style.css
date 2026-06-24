@@ -34,14 +34,14 @@ a {
 }
 
 .top-header {
-    padding: 2rem 8.2% 0;
+    padding: 2rem 2rem 0;
 }
 
 .logo-pet {
     display: block;
     /* width: clamp(190px, 33vw, 267px); */
     height: auto;
-    width: 100px;
+    width: 180px;
 }
 
 .utility-menu {
@@ -275,11 +275,11 @@ a {
     }
 
     .top-header {
-        padding: 1.6rem 6.1rem 0;
+        padding: 2rem 2rem 0;
     }
 
     .logo-pet {
-        width: 150px;
+        width: 180px;
     }
 
     .utility-menu {
